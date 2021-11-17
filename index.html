@@ -11,6 +11,7 @@
 				padding: 0;
 			}
 			#main{
+				position: relative;
 				width: 100%;
 				/*height: 2340px;*/
 				height: 100%;
@@ -18,17 +19,54 @@
 				z-index: -10;
 				zoom: 1;
 				
-				background-image: url("img/底图.JPG");
+				background-image: url("img/fm/底图.JPG");
 				background-repeat: no-repeat;
 				background-size: contain;
 				background-position: center 0;
 			}
+			#jd{
+				position: absolute;
+				z-index: 1;
+				/*background-image: url("img/fm/进度条.png");*/
+			}
+			#ship{
+				position: absolute;
+				z-index: 2;
+				margin-left: 190px;
+				margin-top: 870px;
+				/*left: 0px;*/
+				/*background-image: url("img/fm/封面进度条船（移动）.png");*/
+			}
+			<link rel="stylesheet" href="css/main.css" type="text/css">
 		</style>
 		
+		<script type="text/javascript">
+			var left=190;
+//			var top=870;
+			function jiazai(){
+				 var top=  Math.random() * (880-875) + 875;  
+				 document.getElementById("ship").style.marginLeft = left+"px";
+				 document.getElementById("ship").style.marginTop =  top +"px";
+				 if(left<700){
+				 	left+=5;
+				 	
+				 }
+				 
+               window.requestAnimationFrame(jiazai);
+			}
+		</script>
+		
 	</head>
-	<body>
+	<body onload="jiazai()">
+		
 		<div id="main">
 			<!--<img  src="img/底图.JPG">-->
+				<div id="jd">
+					<img src="img/fm/进度条.png" />
+				</div>
+				<div id="ship">
+					<img src="img/fm/封面进度条船（移动）1.png" />
+				</div>
 		</div>
 	</body>
 </html>

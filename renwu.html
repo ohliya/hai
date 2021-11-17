@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>换装</title>
+		<style type="text/css">
+		html,body{
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		#huanzhuang{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			min-width: 500px;
+			z-index: -10;
+			zoom: 1;
+				
+			background-image: url("img/huanzhuang/背景.JPG");
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center 0;
+		}
+		#nv{
+			position: absolute;
+			z-index: 10;
+		}
+		#xbnv{
+			position: absolute;
+		}
+		#nvy1{
+			position: absolute;
+			z-index: 1;
+		}
+		#nvy2{
+			position: absolute;
+			z-index: 1;
+		}
+		#nvy3{
+			position: absolute;
+			z-index: 1;
+		}
+		
+		
+		</style>
+	</head>
+	<body>
+		<div id="huanzhuang">
+			<div id="nv" onclick="nv()">
+				<img src="img/huanzhuang/女生.png" />	
+			</div>
+			<div class="nvy">
+				<div id="nvy1">
+					<img src="img/huanzhuang/女衣1.png" />
+				</div>
+				<div id="nvy2">
+					<img src="img/huanzhuang/女衣2.png" />
+				</div>
+				<div id="nvy3">
+					<img src="img/huanzhuang/女衣3.png" />
+				</div>
+				
+			</div>
+			<div id="xbnv">
+				<img src="img/huanzhuang/性别选女.png" />
+			</div>
+			
+		</div>
+	</body>
+</html>
