@@ -86,11 +86,49 @@
 			display: none;
 			margin: 1640px 820px;
 		}
-		
-		#xbnan{
+		#nvy11{
 			position: absolute;
-			margin: 940px 0px;
+			/*visibility: hidden;*/
+			display: none;
+		     transform: scale(1.3,1.3);
+			margin: 480px 385px;
 		}
+		#nvy22{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			transform: scale(1.3,1.3);
+			margin: 470px 410px;
+		}
+		#nvy33{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			transform: scale(1.4,1.4);
+			margin: 490px 420px;
+		}
+		#nvk11{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			transform: scale(2.8,2.8);
+			margin: 870px 490px;
+		}
+		#nvk22{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			transform: scale(2.6,2.6);
+			margin: 860px 460px;
+		}
+		#nvk33{
+			position: absolute;
+			/*visibility: hidden;*/
+			display: none;
+			transform: scale(2.6,2.6);
+			margin: 880px 470px;
+		}
+		
 		
 		
 		</style>
@@ -118,6 +156,46 @@
 				nvy[i].style.display="none";
            }
          }
+         
+         function nvy1(){
+         	var nvy11 =  document.getElementById ("nvy11");
+         	nvy11.style.display="block";
+         	nvy22.style.display="none";
+         	nvy33.style.display="none";
+         }
+         function nvy2(){
+         	var nvy22 =  document.getElementById ("nvy22");
+         	nvy22.style.display="block";
+         	nvy11.style.display="none";
+         	nvy33.style.display="none";
+         }
+         function nvy3(){
+         	var nvy33 =  document.getElementById ("nvy33");
+         	nvy33.style.display="block";
+         	nvy22.style.display="none";
+         	nvy11.style.display="none";
+         }
+         function nvk1(){
+         	var nvk11 =  document.getElementById ("nvk11");
+         	nvk33.style.display="none";
+         	nvk22.style.display="none";
+         	nvk11.style.display="block";
+         }
+         function nvk2(){
+         	var nvk22 =  document.getElementById ("nvk22");
+         	nvk33.style.display="none";
+         	nvk11.style.display="none";
+         	nvk22.style.display="block";
+         }
+         function nvk3(){
+         	var nvk33 =  document.getElementById ("nvk33");
+         	nvk22.style.display="none";
+         	nvk11.style.display="none";
+         	nvk33.style.display="block";
+         }
+         
+         
+         
 
     </script>
 	</head>
@@ -135,35 +213,50 @@
 			</div>
 			<div >
 				<div id="nvy1" class="nvy">
-					<img src="img/huanzhuang/女衣1.png" />
+					<img src="img/huanzhuang/女衣1.png" onclick="nvy1()"/>
 				</div>
 				<div id="nvy2" class="nvy">
-					<img src="img/huanzhuang/女衣2.png" />
+					<img src="img/huanzhuang/女衣2.png" onclick="nvy2()"/>
 				</div>
 				<div id="nvy3" class="nvy">
-					<img src="img/huanzhuang/女衣3.png" />
+					<img src="img/huanzhuang/女衣3.png" onclick="nvy3()"/>
 				</div>
 				
 			</div>
 			<div class="nvk">
 				<div id="nvk1" class="nvk">
-					<img src="img/huanzhuang/女裤1.png" />
+					<img src="img/huanzhuang/女裤1.png" onclick="nvk1()"/>
 				</div>
 				<div id="nvk2" class="nvk">
-					<img src="img/huanzhuang/女裤2.png" />
+					<img src="img/huanzhuang/女裤2.png" onclick="nvk2()"/>
 				</div>
 				<div id="nvk3" class="nvk">
-					<img src="img/huanzhuang/女裤3.png" />
+					<img src="img/huanzhuang/女裤3.png" onclick="nvk3()"/>
 				</div>
 			</div>
-			<div id="xbnv">
-				<img src="img/huanzhuang/性别选女.png" />
-			</div>
-			<div id="xbnan">
-				<img  src="img/huanzhuang/性别选男.png"/>
-			</div>
+
 			<div id="jinru">
 				<img  src="img/huanzhuang/进入.png"/>
+			</div>
+			<div >
+				<div id="nvy11" class="nv">
+					<img src="img/huanzhuang/女衣1.png" />
+				</div>
+				<div id="nvy22" class="nv">
+					<img src="img/huanzhuang/女衣2.png" />
+				</div>
+				<div id="nvy33" class="nv">
+					<img src="img/huanzhuang/女衣3.png" />
+				</div>
+				<div id="nvk11" class="nv">
+					<img src="img/huanzhuang/女裤1.png" />
+				</div>
+				<div id="nvk22" class="nv">
+					<img src="img/huanzhuang/女裤2.png" />
+				</div>
+				<div id="nvk33" class="nv">
+					<img src="img/huanzhuang/女裤3.png" />
+				</div>
 			</div>
 			
 			
